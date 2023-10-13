@@ -1,7 +1,9 @@
 #include <stdio.h>
 /*
- * main - Entry point
+ * main - entry point
+ *
  * Description: 'main function description'
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
