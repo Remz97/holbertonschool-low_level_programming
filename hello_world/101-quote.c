@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
+#include <string.h>
 /**
  *  *  * main - Entry point
  *  *  *
@@ -8,6 +9,6 @@
 int main(void)
 {
 	char message[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	ssize_t write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", "4bit");
+	write(2 str, strlen(str));
 	return (1);
 }
