@@ -1,18 +1,17 @@
 #include "main.h"
 /**
- * int _islower - entry point
- *
- * Return: void
+ * _islower - Entry point
+ * ctype.h header file
+ * @c: is parameter
+ * Return:0
  */
 int _islower(int c)
 
 {
-	
+
 	if (c > 96 && c < 123)
-	{
 		return (1);
-	} else {
+	else
 		return (0);
-	}
 
 }
