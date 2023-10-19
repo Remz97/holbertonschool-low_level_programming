@@ -1,12 +1,11 @@
 #include "main.h"
 /**
  * jack_bauer - Entry point
- * @void is parameter
- * return abs(void)
- * Return:0
+ * Print clock from 0:0 to 23:59;
+ * Return: 0
  */
-void jack_bauer(void)
 
+void jack_bauer(void)
 {
 	int min;
 	int hour;
@@ -20,7 +19,7 @@ void jack_bauer(void)
 		_putchar(':');
 		_putchar('0' + (min / 10));
 		_putchar('0' + (min % 10));
-		_putchar('\n');
+		_putchar ('\n');
 	}
 	}
 }
