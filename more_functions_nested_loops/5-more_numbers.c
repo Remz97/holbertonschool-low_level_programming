@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * void more_numbers - Entry point
+ * more_numbers - Entry point
  * Print natural number until 98;
  * Return: 0
  */
