@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isupper - Entry point
+ * _isdigit - Entry point
  * @c: is int
  * Print natural number until 98;
  * Return: 0
