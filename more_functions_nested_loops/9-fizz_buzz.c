@@ -4,28 +4,30 @@
  *
  * Return: 0
  */
+
 int main(void)
 {
-	int n;
+	int i;
+	char fizz[] = "Fizz";
+	char buzz[] = "Buzz";
 
-	for (n = 1; n <= 100; n++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (n % 3 == 0)
+		if (i == 100)
 		{
-			printf("Fizz ");
+			printf("%s", buzz);
+			break;
 		}
-		else if (n % 5 == 0)
-		{
-			printf("Buzz ");
-		}
-		else if (n % 3 == 0 && n % 5 == 0)
-		{
-			printf("FizzBuzz ");
-		}
+		if ((i % 3 == 0) && (i % 5 == 0))
+			printf("%s%s ", fizz, buzz);
+		else if (i % 3 == 0)
+			printf("%s ", fizz);
+		else if (i % 5 == 0)
+			printf("%s ", buzz);
 		else
-		{
-			printf ("%d ", n);
-		}
+			printf("%d ", i);
 	}
+	printf("\n");
+
 	return (0);
 }
