@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _puts - main
- * @*str: is int
+ * @str: is int
  *
  */
 void _puts(char *str)
