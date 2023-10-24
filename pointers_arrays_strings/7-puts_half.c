@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_rev - main
- * @s: is int
+ * puts_half - main
+ * @str: is int
  *
  */
 void puts_half(char *str)
