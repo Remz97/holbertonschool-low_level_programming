@@ -2,7 +2,8 @@
 /**
  * _strcpy - main
  * @dest: is int
- * @src
+ * @src: ok
+ * Return: dest
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -14,5 +15,5 @@ char *_strcpy(char *dest, char *src)
 		len++;
 	}
 	dest[len] = '\0';
-	return dest;
+	return (dest);
 }
