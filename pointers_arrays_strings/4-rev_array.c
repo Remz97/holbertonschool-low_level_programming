@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * _strncat - concatenates two strings
- * @dest: destination
- * @src: source
+ * reverse_array - concatenates two strings
+ * @a: destination
  * @n: number of bytes
  * Return: return a pointer to the resulting string dest
  */
@@ -16,8 +15,8 @@ void reverse_array(int *a, int n)
 	while (start < end)
 	{
 		tmp = a[start];
-		a [start] = a[end];
-		a [end] = tmp;
+		a[start] = a[end];
+		a[end] = tmp;
 		start++;
 		end--;
 	}
