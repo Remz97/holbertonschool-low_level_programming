@@ -1,22 +1,32 @@
-#include <stddef.h>
 /**
- * _strpbrk - functions to search a char in str
+ * _strspn - functions to search a char in str
  * @s: pointer to string
- * @accept: character to compare
- * Return: point to nth char
+ * @accept: character to fill
+ * Return: counted charachters
  */
 
-char *_strpbrk(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	int i, j;
+	int count = 0;
+	int found;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
+		j = 0;
+		found = 0;
+
 		for (j = 0; accept[j] != '\0'; j++)
 		{
 			if (s[i] == accept[j])
-				return (s + i);
+			{
+				count++;
+				found = 1;
+				break;
+			}
 		}
+		if (found == 0)
+			break;
 	}
-	return (NULL);
+	return (count);
 }
