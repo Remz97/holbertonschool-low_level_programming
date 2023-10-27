@@ -1,3 +1,10 @@
+#include <stddef.h>
+/**
+ * _strpbrk - functions to search a char in str
+ * @s: pointer to string
+ * @accept: character to compare
+ * Return: point to nth char
+ */
 char *_strpbrk(char *s, char *accept)
 {
 	int i;
