@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_strlen_recursion - sdfc
+ *_pow_recursion - sdfc
  *@x: adscas
  *@y: fd
  *Return: ased
