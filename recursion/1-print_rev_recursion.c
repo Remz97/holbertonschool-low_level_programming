@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_puts_recursion - asasd
+ *_puts_rev_recursion - asasd
  *@s: aedx
  */
 void _print_rev_recursion(char *s)
