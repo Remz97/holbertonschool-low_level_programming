@@ -6,10 +6,9 @@
  * ne vend te int argc mund te __attribute__((unused)) argc
  * Return: Return 0
  */
-int main(int argc, char *argv[])
+int main(__attribute__((unused)) int argc, char *argv[])
 {
-	int arg = argc - 1;
 
-	printf("%s\n", argv[arg]);
+	printf("%s\n", argv[0]);
 	return (0);
 }
