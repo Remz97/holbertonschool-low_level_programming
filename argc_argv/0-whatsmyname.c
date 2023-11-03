@@ -5,13 +5,10 @@
  * @argv: strings pasted
  * Return: Return 0
  */
-int main(int __attribute__((unused)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	int i;
+	int i = argc - 1;
 
-	for (i = 0; i < '\0'; i++)
-	{
 		printf("%s\n ", argv[i]);
-	}
 		return (0);
 }
