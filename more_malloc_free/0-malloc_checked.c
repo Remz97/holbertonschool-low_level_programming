@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * *malloc_checked - ss
- * @b: sf
- * 
- **/
+ *malloc_checked - ss
+ *@b: s
+ *Return: hgh
+ */
 
 void *malloc_checked(unsigned int b)
 {
