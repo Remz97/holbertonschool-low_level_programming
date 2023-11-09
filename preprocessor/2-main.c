@@ -2,6 +2,6 @@
 
 int main (void)
 {
-	printf ("2-main.c\n");
+	printf __FILE__ ("2-main.c\n");
 	return (0);
 }
