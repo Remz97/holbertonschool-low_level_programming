@@ -2,18 +2,36 @@
 #include<stdlib.h>
 
 /**
- * free_dlistint -function that frees list
- * @head: -points to the first structure
+ * add_dnodeint_end -adds new nod at the end
+ * @head: -points to the respective structure
+ * @n: -holds value for output
+ * Return: (new)
  */
 
-void free_dlistint(dlistint_t *head)
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *helper;
+	dlistint_t *new = malloc(sizeof(dlistint_t));
+	dlistint_t *virtual = *head;
 
-	while (head != NULL)
+	if (new == NULL)
+		return (NULL);
+	new->n = n;
+
+	if (*head == NULL)
 	{
-		helper = head;
-		head = head->next;
-		free(helper);
+		*head = new;
+		new->prev = NULL;
+		new->next = NULL;
 	}
+	else
+	{
+		while (virtual->next != NULL)
+		{
+			virtual = virtual->next;
+		}
+		virtual->next = new;
+		new->next = NULL;
+		new->prev = virtual;
+	}
+	return (new);
 }
